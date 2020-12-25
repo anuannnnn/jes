@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title><%=title%></title>
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="/css/bootstrap.min.css" rel="stylesheet">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+    <link href="/css/styles.css" rel="stylesheet">
+   
+          </head>
+          <body>
+          <!--====form section start====-->
+          <div class="user-detail">
+            <script>
+  var user=document.getElementById("usw");
+ var ps=document.getElementById("psw");
+ 
+  function check(uww,pww,Redirect) 
+{
+    var uww=user.value;
+
+    var pww=ps.value;
+    if(uww == 'admin' && pww ==  '12345')
+{
+    
+     document.write("You will be redirected to main page in 10 sec.");
+    setTimeout('Redirect()', 3000);
+    
+
+
+
+
+
+        
+        
+     return true;
+     
+}
+else
+{
+	alert("Error Password or Username")
+    return false;
+
+    
+
+}
+}
+function Redirect() {
+    window.location = "j.html";
+ }       
+check(admin,12345,Redirect);
+  
+    
+
+
+
+
+  
+//  var  ps=document.getElementById("psw");
+//  var us=document.getElementById("usw");
+
+
+// function check() 
+// {
+//   var uww=us.value;
+
+//   var pww=ps.value;
+//     if(uww == "admin" && pww== "12345")
+// {
+    
+//      alert("rrrr");
+    
+    
+
+
+
+
+
+        
+        
+//      return true;
+     
+// }
+// else
+// {
+// 	alert("Error Password or Username")
+//     return false;
+
+    
+
+// }
+// }
+
+
+  
+    
+
+
+</script>
+
+
+
+
+
+      
+            <h1 >
+              <center> LOGIN FORM</center></div>
+          </h1>
+          <div class="jk">
+
+          <form name="loginForm"  >
+              <h2 >
+                  <center> LOGIN FORM</center>
+              </h2>
+              <br>
+              <!-- <form name="loginForm" onsubmit="return check(this.form)"> -->
+                  
+                  
+<!-- <form name="loginForm"  action="login.php"> -->
+<!-- <table width="20%" bgcolor="0099CC" align="center"> -->
+
+<!-- <tr> -->
+<!-- <td colspan=2><center><font size=4><b>HTML Login Page</b></font></center></td> -->
+<!-- </tr> -->
+
+<!-- <tr> -->
+<!-- <td>Username:</td> -->
+<!-- <td> -->
+  <input type="text"  name="uwd" placeholder="username" id="usw">
+<!-- </tr> --><br><br>
+
+<!-- <tr> -->
+<!-- <td>Password:</td> -->
+<!-- <td> -->
+  <input type="Password"  name="pwd" placeholder="password" id="psw">
+<!-- </tr> --><br><br>
+
+<!-- <tr> -->
+<!-- <td > -->
+  <input type="Reset">
+  <br>
+  <br>
+<!-- <td> -->
+  <input type="submit" onclick="return check()" value="Login"></td>
+<!-- </tr> -->
+
+<!-- </table> -->
+</div></form>
+
+	<!-- script references -->
+    
+  
+
+    
+  
+	</body>
+</html>
